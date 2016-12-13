@@ -12,7 +12,7 @@ exports.handler = function(event, context, callback) {
     var params = {
         TableName : "Game",
         Key : { 
-          "teamID" : event.gameID.toString(),
+          "gameID" : event.gameID.toString(),
         },
         UpdateExpression: "set events = :a",
         ExpressionAttributeValues:{
