@@ -9,6 +9,8 @@ exports.handler = function(event, context, callback) {
     if (event.events == null) {
         callback(new Error('No Events'));
     }
+    console.log(event.gameID.toString());
+    console.log(event.events);
     var params = {
         TableName : "Game",
         Key : { 
